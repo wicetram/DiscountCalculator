@@ -1,0 +1,50 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class BillPaymentRequestDto {
+  BillAmount : Double
+  HasGoldCard : Boolean
+  HasSilverCard : Boolean
+  IsAffiliate : Boolean
+  IsLongTermCustomer : Boolean
+  get_BillAmount()
+  set_BillAmount()
+  get_HasGoldCard()
+  set_HasGoldCard()
+  get_HasSilverCard()
+  set_HasSilverCard()
+  get_IsAffiliate()
+  set_IsAffiliate()
+  get_IsLongTermCustomer()
+  set_IsLongTermCustomer()
+  Equals()
+  GetHashCode()
+  GetType()
+  ToString()
+}
+
+class BillPaymentResponseDto {
+  BillAmount : Double
+  TotalDiscount : Double
+  NetPayableAmount : Double
+  get_BillAmount()
+  set_BillAmount()
+  get_TotalDiscount()
+  set_TotalDiscount()
+  get_NetPayableAmount()
+  set_NetPayableAmount()
+  Equals()
+  GetHashCode()
+  GetType()
+  ToString()
+}
+
+class DiscountCalculator {
+  Main()
+  Equals()
+  GetHashCode()
+  GetType()
+  ToString()
+}
+
+@enduml
